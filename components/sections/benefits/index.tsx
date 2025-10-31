@@ -1,11 +1,11 @@
-import React from "react"
-import Section from "@/components/layout/section"
-import Heading from "../../atoms/heading"
-import { benefits } from "@/constants"
-import Image from "next/image"
-import Arrow from "@/components/svg/arrow"
 import { GradientLight } from "@/components/design/benefits"
+import Section from "@/components/layout/section"
+import Arrow from "@/components/svg/arrow"
 import ClipPath from "@/components/svg/clip-path"
+import { benefits } from "@/constants"
+import { COMPANY_NAME } from "@/var"
+import Image from "next/image"
+import Heading from "../../atoms/heading"
 
 type Props = {}
 
@@ -15,7 +15,7 @@ const Benefits = (props: Props) => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Chat Smarter, Not Harder with StarForge"
+          title={`Chat Smarter, Not Harder with ${COMPANY_NAME}`}
         />
 
         <div className="mb-10 flex flex-wrap gap-10">

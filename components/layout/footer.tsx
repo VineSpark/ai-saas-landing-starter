@@ -1,8 +1,8 @@
-import React from "react";
-import Section from "./section";
 import { socials } from "@/constants";
-import Link from "next/link";
+import { COMPANY_NAME } from "@/var";
 import Image from "next/image";
+import Link from "next/link";
+import Section from "./section";
 
 type Props = {};
 
@@ -11,7 +11,7 @@ const Footer = (props: Props) => {
     <Section crosses className="!px-0 !py-10">
       <div className="container flex items-center justify-center gap-10 max-sm:flex-col sm:justify-between">
         <p className="caption text-n-4 lg:block">
-          &copy; {new Date().getFullYear()} All rights reserved.
+          &copy; {COMPANY_NAME} {new Date().getFullYear()} All rights reserved.
         </p>
         <ul className="flex flex-wrap gap-5">
           {socials.map((item) => (

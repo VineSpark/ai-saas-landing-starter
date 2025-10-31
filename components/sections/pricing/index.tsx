@@ -1,11 +1,11 @@
 import Heading from "@/components/atoms/heading"
+import { LeftLine, RightLine } from "@/components/design/pricing"
 import Section from "@/components/layout/section"
 import { images } from "@/constants"
+import { COMPANY_TITLE } from "@/var"
 import Image from "next/image"
-import React from "react"
-import PricingList from "./pricing-list"
-import { LeftLine, RightLine } from "@/components/design/pricing"
 import Link from "next/link"
+import PricingList from "./pricing-list"
 
 type Props = {}
 
@@ -34,7 +34,7 @@ const Pricing = (props: Props) => {
         </div>
 
         <Heading
-          tag="Get started with StarForge"
+          tag={`Get started with ${COMPANY_TITLE}`}
           title="Pay once, use forever"
         />
 

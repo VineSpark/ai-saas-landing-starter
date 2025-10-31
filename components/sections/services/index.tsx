@@ -1,18 +1,19 @@
 "use client"
 
-import React, { useState } from "react"
-import Section from "@/components/layout/section"
-import Heading from "../../atoms/heading"
-import { starForgeServices, starForgeServicesIcons, images } from "@/constants"
-import Image from "next/image"
-import Generating from "../../atoms/generating"
 import {
+  Gradient,
   PhotoChatMessage,
   VideoBar,
   VideoChatMessage,
-  Gradient,
 } from "@/components/design/services"
+import Section from "@/components/layout/section"
+import { images, starForgeServices, starForgeServicesIcons } from "@/constants"
 import { cn } from "@/lib/utils"
+import { COMPANY_NAME } from "@/var"
+import Image from "next/image"
+import { useState } from "react"
+import Generating from "../../atoms/generating"
+import Heading from "../../atoms/heading"
 
 type Props = {}
 
@@ -24,7 +25,7 @@ const Services = (props: Props) => {
       <div className="container">
         <Heading
           title="Generative AI made for creators."
-          text="StarForge unlocks the potential of AI-powered applications"
+          text={`${COMPANY_NAME} unlocks the potential of AI-powered applications`}
         />
 
         <div className="relative">
@@ -42,7 +43,7 @@ const Services = (props: Props) => {
             <div className="relative z-1 ml-auto max-w-[17rem]">
               <h4 className="h4 mb-4">Smartest AI</h4>
               <p className="body-2 mb-12 text-n-3">
-                StarForge unlocks the potential of AI-powered applications
+                {COMPANY_NAME} unlocks the potential of AI-powered applications
               </p>
               <ul className="body-2">
                 {starForgeServices.map((service, index) => (

@@ -1,11 +1,10 @@
-import React from "react"
-import Section from "@/components/layout/section"
-import { collabApps, collabContent, collabText, images } from "@/constants"
-import Image from "next/image"
 import Button from "@/components/atoms/button"
-import { cn } from "@/lib/utils"
 import { LeftCurve, RightCurve } from "@/components/design/collaboration"
+import Section from "@/components/layout/section"
 import { OrbitingCircles } from "@/components/ui/orbiting-circles"
+import { collabApps, collabContent, collabText, images } from "@/constants"
+import { COMPANY_NAME } from "@/var"
+import Image from "next/image"
 
 type Props = {}
 
@@ -53,7 +52,7 @@ const Collaboration = (props: Props) => {
                     src={images.starForgeSymbol}
                     width={48}
                     height={48}
-                    alt="StarForge"
+                    alt={COMPANY_NAME}
                     draggable={false}
                   />
                 </div>
